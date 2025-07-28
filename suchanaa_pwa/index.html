@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <title>Suchanaa Updates</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; text-align: center; }
+    h1 { color: #007bff; }
+  </style>
+</head>
+<body>
+  <h1>📢 Suchanaa Daily Updates</h1>
+  <p>Thank you for staying connected with Suchanaa.com. You'll always find the latest notices and tenders here.</p>
+</body>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js').then(() => {
+      console.log('Service Worker Registered');
+    });
+  }
+</script>
+</html>
